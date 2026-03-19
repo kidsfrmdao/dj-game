@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DJ Mixing in the Beat</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎧 DJ Mixing in the Beat</h1>
+            <p>Mix beats like a pro!</p>
+        </header>
+
+        <!-- Premium Badge -->
+        <div id="premiumBadge" class="premium-badge hidden">✨ PREMIUM ✨</div>
+
+        <!-- Main DJ Interface -->
+        <main class="dj-interface">
+            <!-- Left Deck -->
+            <div class="deck deck-left">
+                <h3>Deck 1</h3>
+                <div class="song-display" id="deck1-song">Select a Song</div>
+                
+                <div class="controls">
+                    <label>Songs:</label>
+                    <select id="deck1-select" class="song-select">
+                        <option value="">-- Select Song --</option>
+                    </select>
+                    
+                    <button id="deck1-play" class="btn btn-play">▶ Play</button>
+                    <button id="deck1-stop" class="btn btn-stop">⏹ Stop</button>
+                </div>
+
+                <div class="slider-group">
+                    <label>Volume</label>
+                    <input type="range" id="deck1-volume" min="0" max="100" value="50" class="slider">
+                    <span id="deck1-volume-display">50%</span>
+                </div>
+
+                <!-- Effects (Premium Only) -->
+                <div id="deck1-effects" class="effects hidden">
+                    <h4>Effects</h4>
+                    <label>Treble</label>
+                    <input type="range" id="deck1-treble" min="0" max="100" value="50" class="slider">
+                    
+                    <label>Bass</label>
+                    <input type="range" id="deck1-bass" min="0" max="100" value="50" class="slider">
+                    
+                    <label>Echo</label>
+                    <input type="range" id="deck1-echo" min="0" max="100" value="0" class="slider">
+                </div>
+            </div>
+
+            <!-- Crossfader (Premium Only) -->
+            <div id="crossfader-section" class="crossfader-section hidden">
+                <h3>Crossfader</h3>
+                <input type="range" id="crossfader" min="0" max="100" value="50" class="crossfader-slider">
+                <div class="crossfader-labels">
+                    <span>Deck 1</span>
+                    <span>Both</span>
+                    <span>Deck 2</span>
+                </div>
+            </div>
+
+            <!-- Right Deck -->
+            <div class="deck deck-right">
+                <h3>Deck 2</h3>
+                <div class="song-display" id="deck2-song">Select a Song</div>
+                
+                <div class="controls">
+                    <label>Songs:</label>
+                    <select id="deck2-select" class="song-select">
+                        <option value="">-- Select Song --</option>
+                    </select>
+                    
+                    <button id="deck2-play" class="btn btn-play">▶ Play</button>
+                    <button id="deck2-stop" class="btn btn-stop">⏹ Stop</button>
+                </div>
+
+                <div class="slider-group">
+                    <label>Volume</label>
+                    <input type="range" id="deck2-volume" min="0" max="100" value="50" class="slider">
+                    <span id="deck2-volume-display">50%</span>
+                </div>
+
+                <!-- Effects (Premium Only) -->
+                <div id="deck2-effects" class="effects hidden">
+                    <h4>Effects</h4>
+                    <label>Treble</label>
+                    <input type="range" id="deck2-treble" min="0" max="100" value="50" class="slider">
+                    
+                    <label>Bass</label>
+                    <input type="range" id="deck2-bass" min="0" max="100" value="50" class="slider">
+                    
+                    <label>Echo</label>
+                    <input type="range" id="deck2-echo" min="0" max="100" value="0" class="slider">
+                </div>
+            </div>
+        </main>
+
+        <!-- Premium CTA -->
+        <section class="premium-section">
+            <h2>🎵 Unlock Premium Features</h2>
+            <p>Get access to:</p>
+            <ul>
+                <li>✨ 50+ Exclusive Beats & Songs</li>
+                <li>🎛️ Advanced Effects (EQ, Echo, Filter)</li>
+                <li>🔄 Crossfader Control</li>
+                <li>💾 Save & Record Your Mixes</li>
+                <li>❌ No Ads</li>
+            </ul>
+            <button id="upgradeBtn" class="btn btn-premium">Upgrade for $5.99</button>
+        </section>
+
+        <!-- Ad Space (Free Version) -->
+        <div id="adSpace" class="ad-space">
+            <p>📢 [Advertisement Space - Google AdSense]</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
